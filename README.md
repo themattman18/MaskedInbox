@@ -15,8 +15,6 @@ Masked Inbox is a Flutter app for managing Firefox Relay email masks.
 
 ## Firefox Relay API
 
-The app uses the API shape from `C:\Users\thema\Downloads\openapi.json`:
-
 - `GET /api/v1/profiles/` for account capabilities.
 - `GET /api/v1/relayaddresses/` for random masks.
 - `POST /api/v1/relayaddresses/` to create a random mask.
@@ -45,14 +43,12 @@ If you want generated platform folders, run `flutter create .` from this directo
 Firefox Relay does not send browser CORS headers for local Flutter web apps. Start the local development proxy in one terminal:
 
 ```powershell
-cd C:\GitHub\MaskedInbox
 dart run tool/relay_proxy.dart
 ```
 
 Then start the Flutter web app in another terminal:
 
 ```powershell
-cd C:\GitHub\MaskedInbox
 flutter run -d chrome
 ```
 
